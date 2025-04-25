@@ -28,7 +28,7 @@ export default function Microphone() {
                 setResponse(`You said: ${recognizedText}`);
                 
                 try {
-                    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+                    const API_URL = "https://dialecto-api.onrender.com"; // Replace with your actual API URL"
                     const res = await fetch(`${API_URL}/chatbot`,{
                         method: "POST",
                         headers: {

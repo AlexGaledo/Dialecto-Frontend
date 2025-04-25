@@ -28,7 +28,7 @@ export default function Microphone() {
                 setResponse(`You said: ${recognizedText}`);
                 
                 try {
-                    const API_URL = "https://dialecto-api.onrender.com"; // Replace with your actual API URL
+                    const API_URL = "https://dialecto-backend.onrender.com"; // Replace with your actual API URL
                     const res = await fetch(`${API_URL}/chatbot`,{
                         method: "POST",
                         headers: {

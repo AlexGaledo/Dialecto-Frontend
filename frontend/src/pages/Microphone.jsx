@@ -25,7 +25,6 @@ export default function Microphone() {
                 setAudioText(recognizedText); // Update audio text state
     
                 // Send the recognized text to your backend (or process it here)
-                setResponse("Processing..."); // Show processing message
                 
                 try {
                     const API_URL = "https://dialecto-backend.onrender.com"; // Replace with your actual API URL
@@ -45,7 +44,7 @@ export default function Microphone() {
                     }
     
                     const data = await res.json();
-                    setResponse(data.chatbot_response); // Correct field name here
+                    setResponse(data.chatbot_response_echo); // Correct field name here
                 } catch (error) {
                     console.error('Error fetching chatbot response:', error);
                     setResponse('Error fetching chatbot response');

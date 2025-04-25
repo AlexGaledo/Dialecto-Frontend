@@ -44,7 +44,7 @@ export default function Microphone() {
                     }
     
                     const data = await res.json();
-                    setResponse(data.chatbot_response_echo); // Correct field name here
+                    setResponse(data.chatbot_response); // Correct field name here
                 } catch (error) {
                     console.error('Error fetching chatbot response:', error);
                     setResponse('Error fetching chatbot response');

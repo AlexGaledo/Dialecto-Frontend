@@ -25,7 +25,7 @@ export default function Microphone() {
                 setAudioText(recognizedText); // Update audio text state
     
                 // Send the recognized text to your backend (or process it here)
-                setResponse(data.chatbot_response_echo);
+                setResponse("Processing..."); // Show processing message
                 
                 try {
                     const API_URL = "https://dialecto-backend.onrender.com"; // Replace with your actual API URL

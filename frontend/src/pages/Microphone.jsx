@@ -27,7 +27,7 @@ export default function Microphone() {
                 // Send the recognized text to your backend (or process it here)
                 
                 try {
-                    const API_URL = "https://dialecto-backend.onrender.com"; // Replace with your actual API URL
+                    const API_URL = "https://spamf5-gemini-api.onrender.com"; // Replace with your actual API URL
                     const res = await fetch(`${API_URL}/chatbot`,{
                         method: "POST",
                         headers: {

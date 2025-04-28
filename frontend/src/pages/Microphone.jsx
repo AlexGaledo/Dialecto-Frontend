@@ -79,7 +79,7 @@ export default function Microphone() {
 
             <div className="chatbot_response">
                 {audioText && <p>Audio Text: {audioText}</p>}
-                {response ? <p>{response}</p> : <p>No response from chatbot</p>}
+                { <p>{response}</p> }
             </div>
         </div>
     );
